@@ -30,5 +30,18 @@ namespace Hangman.TestTools
       Assert.AreEqual(lettersCorrect, result);
 
     }
+
+    [TestMethod]
+    public void CheckLetter_ChecksIfLetterIsNotIncludedInWord_RemainingGuesses()
+    {
+      //Arrange
+      int remainingGuesses = 5;
+      HangmanGame newHangman = new("word");
+      //Act
+      newHangman.CheckLetter('t');
+      int result = newHangman.RemainingGuesses;
+      //Assert
+      Assert.AreEqual(remainingGuesses, result);
+    }
   }
 } 

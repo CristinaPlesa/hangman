@@ -12,8 +12,9 @@ namespace Hangman.TestTools
     public void GameConstructor_CreatesInstanceOfHangmanGame_HangmanGame()
     {
       HangmanGame newHangman = new("word");
+      char[] wordArray = { 'w', 'o', 'r', 'd' };
       Assert.AreEqual(typeof(HangmanGame), newHangman.GetType());
-      Assert.AreEqual("word", newHangman.AnswerWord);
+      Assert.AreEqual(wordArray[0], newHangman.AnswerWord[0]);
     }
 
     [TestMethod]

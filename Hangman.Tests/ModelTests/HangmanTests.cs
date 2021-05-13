@@ -15,5 +15,19 @@ namespace Hangman.TestTools
       Assert.AreEqual(typeof(HangmanGame), newHangman.GetType());
       Assert.AreEqual("word", newHangman.AnswerWord);
     }
+
+    [TestMethod]
+    public void CheckLetter_ChecksIfLetterIsIncludedInWord_LettersCorrect()
+    {
+      //Arrange
+      int lettersCorrect = 1;
+      HangmanGame newHangman = new("word");
+      //Act
+      newHangman.CheckLetter('w');
+      int result = newHangman.LettersCorrect;
+      //Assert
+      Assert.AreEqual(lettersCorrect, result);
+
+    }
   }
 } 

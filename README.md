@@ -56,3 +56,7 @@ No known issues
 # Copyright and License ⚖️
 
 [MIT License](license) &copy; 2021 Isaac Moreno
+
+CheckLetter('a')
+if letter is in the word
+   => 

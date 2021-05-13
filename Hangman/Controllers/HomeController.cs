@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using HangmanGame.Models;
+using Hangman.Models;
 
-namespace HangmanGame.Controllers
+namespace Hangman.Controllers
 {
   public class HomeController : Controller
   {

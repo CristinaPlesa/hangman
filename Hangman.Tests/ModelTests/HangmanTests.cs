@@ -15,4 +15,4 @@ namespace Hangman.TestTools
       Assert.AreEqual(typeof(HangmanGame), newHangman.GetType());
     }
   }
-}
+} 

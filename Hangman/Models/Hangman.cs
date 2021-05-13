@@ -1,4 +1,4 @@
-namespace HangmanGame.Models
+namespace Hangman.Models
 {
   public class HangmanGame
   {

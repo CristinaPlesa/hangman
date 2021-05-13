@@ -11,8 +11,9 @@ namespace Hangman.TestTools
     [TestMethod]
     public void GameConstructor_CreatesInstanceOfHangmanGame_HangmanGame()
     {
-      HangmanGame newHangman = new();
+      HangmanGame newHangman = new("word");
       Assert.AreEqual(typeof(HangmanGame), newHangman.GetType());
+      Assert.AreEqual("word", newHangman.AnswerWord);
     }
   }
 } 
